@@ -1,0 +1,68 @@
+
+
+body {
+	font-family: Verdana;
+	background: grey;
+	margin: auto;
+	width: 530px;
+}
+
+h1 {
+	color: red;
+	letter-spacing: 3mm;
+}
+
+h2 {
+	color: yellow;
+}
+
+h3 {
+	color: white;
+}
+
+p {
+  	text-indent: 1.5em;	
+}
+
+#tabela_t {
+   background-color: #ffc;
+}
+
+#tabela_t td {
+   padding: 5px;
+}
+td.inny_wyglad {
+   background-color: yellow;
+   vertical-align: top;
+}
+td.inny_wyglad1 {
+   background-color: red;
+   vertical-align: top;
+}
+#tabela th {
+   padding: 5px;
+		font-weight: bold;
+}
+th.inny_wyglad {
+   background-color: yellow;
+   vertical-align: top;
+}
+th.inny_wyglad1 {
+   background-color: red;
+   vertical-align: top;
+}
+th.inny_wyglad2 {
+   background-color: white;
+   vertical-align: top;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+ol ol {
+	list-style-type: lower-roman;
+}
+ol ol ol {
+	list-style-type: lower-greek;
+}
+

@@ -1,0 +1,112 @@
+body {
+	background-color: grey;
+	font-family: Verdana, sans-serif;
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+
+#logo {
+	color: white;
+	margin-top: 20px;
+	font-size: 44px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.menu {
+	background-color: #303030;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#content {
+	padding: 40px;
+	background-color: lightgrey;
+}
+
+#spis_menu {
+
+	background-color: lightgrey;
+	padding: 30px;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	width: 10em;
+	margin-top: -2.5em;
+}
+
+.option1 {
+	float: left;
+	min-width: 50px;
+	height: 25px;
+	font-size: 18px;
+	padding: 10px;
+	border-right: 2px lightgrey dotted;
+	font-weight: bold;
+}
+
+.option1:hover {
+	background-color: lightgrey;
+}
+
+.option2 {
+	float: left;
+	min-width: 50px;
+	height: 35px;
+	font-size: 18px;
+	padding: 15px;
+	border-bottom: 2px grey dotted;
+	font-weight: bold;
+}
+
+.option2:hover {
+	background-color: #303030;
+}
+
+.bigtitle {
+	font-size: 32px;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.dottedline {
+	height: 5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-bottom: 2px #444444 dotted;
+}
+
+.bigletter {
+	font-weight: bold;
+	color: #b22300;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 1160px;
+	z-index: 100;
+}
+
+a:link {
+    color:#b22300;
+    outline:none;
+    text-decoration:none;
+}
+
+a:visited {
+	color:#b22300;
+    outline:none;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:none;
+    cursor: default;
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Strona główna</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;
+			charset=UTF-8" />
+		<meta name="Author" lang="pl" content="Konrad Polarczyk" />
+	</head>
+	<body>
+	<h1>Dodaj komentarz</h1>
+		<form action="./wpis.php" method="post" enctype="multipart/form-data">
+			<p>Rodzaj:
+			<select name="type">
+				<option value="pos">Pozytywny</option>
+				<option value="neg">Negatywny</option>
+				<option value="neu">Neutralny</option>
+			</select></p>
+			<p>Nazwa użytkownika:<br /><input type="text" name="username"/></p>
+			<p>Komentarz:<br /><textarea rows="4" cols="50" name="description"></textarea></p>
+			<div>
+				<input type="submit" value="Zapisz"/>
+			</div>
+		</form>
+	</body>
+</html>

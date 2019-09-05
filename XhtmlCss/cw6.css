@@ -1,0 +1,74 @@
+body {
+	background-color: grey;
+	font-family: Verdana, sans-serif;
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+
+#logo {
+	color: white;
+	margin-top: 20px;
+	font-size: 44px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+#menu {
+	background-color: #303030;
+	margin-top: 20px;
+	color: white;
+	padding: 20px;
+}
+
+#content {
+	padding: 40px;
+	background-color: lightgrey;
+}
+
+.option {
+	float: left;
+	min-width: 50px;
+	height: 25px;
+	font-size: 18px;
+	padding: 10px;
+	border-right: 2px lightgrey dotted;
+	font-weight: bold;
+}
+
+.option:hover {
+	background-color: #050505;
+}
+
+.bigtitle {
+	font-size: 32px;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.dottedline {
+	height: 5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-bottom: 2px #444444 dotted;
+}
+
+a:link {
+    color:#b22300;
+    outline:none;
+    text-decoration:none;
+}
+
+a:visited {
+	color:#b22300;
+    outline:none;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:none;
+    cursor: default;
+}

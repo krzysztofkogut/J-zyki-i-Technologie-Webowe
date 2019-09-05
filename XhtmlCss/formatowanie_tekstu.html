@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head> 
+	<link rel="stylesheet" title="compact"
+	href="style.css" type="text/css" />
+	<link rel="alternate stylesheet" type="text/css" title="alternate" href="alternatestyle.css"></link>
+	<link href="druk.css" type="text/css" rel="stylesheet" media="print"/>
+	<title>Formatowanie tekstu</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml;
+	charset=UTF-8" />
+
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script>
+
+		$(document).ready(function() {
+		var NavY = $('.menu').offset().top;
+		 
+		var stickyNav = function(){
+		var ScrollY = $(window).scrollTop();
+			  
+		if (ScrollY > NavY) { 
+			$('.menu').addClass('sticky');
+		} else {
+			$('.menu').removeClass('sticky'); 
+		}
+		};
+		 
+		stickyNav();
+		 
+		$(window).scroll(function() {
+			stickyNav();
+		});
+		});
+		
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="logo">
+			<h1 id>Formatowanie tekstu</h1>
+		</div>
+		<div class="menu">
+					<div class="option1"><a href="./index.html">Index</a></div>
+					<div class="option1"><a href="./formatowanie_tekstu.html">Formatowanie tekstu</a></div>
+					<div class="option1"><a href="./tabele_listy.html">Tabele i listy</a></div>
+					<div class="option1"><a href="./obrazy.html">Obrazy</a></div>
+					<div style="clear:both;"></div>
+		</div>
+		<div id="content">
+			<h1 id="format" class="bigtitle">Formatowanie</h1>
+			<p><i>Tekst pisany kursywą sposób 1.</i></p>
+			<p><em>Tekst p[isany kursywą sposób 2.</em></p>
+			<p><b>Tekst pogrubiony sposób 1.</b></p>
+			<p><strong>Tekst pogrubiony sposób 2.</strong></p>
+			<p><code> double kwadrat(double a) {return a*a;} //code</code></p>
+			<p><samp> double kwadrat(double a) {return a*a;} //samp </samp></p>
+			<p>(a<sub>1</sub> + a<sub>2</sub>)<sup>2</sup> &lt; a<sub>1</sub><sup>2</sup>
+			 + a<sub>2</sub><sup>2</sup></p>
+
+			<div class="dottedline"></div>
+			<h1 id="kod" class="bigtitle">Fragment kodu</h1>
+
+			<pre>
+			<code>
+			
+	        Scanner scan = new Scanner(System.in);
+	        String s = scan.next();
+	        int i = scan.nextInt();
+	        double d = scan.nextDouble();
+	        System.out.printf("Wczytano %s , %d, %f",s,i,d);
+			
+			</code>
+			</pre>
+
+			<div id="pytania">
+				<div class="dottedline"></div>
+				<h1 id="pytania" class="bigtitle">Pytania</h1>
+				<h3><span class="bigletter">F</span>aka jest różnica między znacznikami i oraz em? Czy zawsze dają identyczne wyniki?</h3>
+				<p> Tekst po użyciu tych znaczników wygląda tak samo, jednak same znaczniki bardzo się różnią. &lt;em&gt; używa się, żeby coś podkreślić. Emfaza jest stanem logicznym - może być używana jako kursywa, ale też na przykład jako czerwony, podkreślony tekst. Znacznik &lt;i&gt; reprezentuje stan fizyczny - jest po prostu pochylonym tekstem. Nie jest on zabroniony, jednak nie jest zalecany, odkąd kwestię stylu pozostawia się CSS. Znacznik &lt;em&gt; może być nadpisywany w CSS.</p>
+
+				<h3><span class="bigletter">J</span>aka jest różnica między znacznikami b oraz strong? Czy zawsze dają identyczne wyniki?</h3>
+				<p>Tak samo jak w przypadku &lt;em&gt; i &lt;i&gt;, znaczniki &lt;strong&gt; i &lt;b&gt; różnią się od siebie. &lt;b&gt; wyraża tylko pogrubienie tekstu, natomiast &lt;strong&gt; stosuje się, by podkreślić znaczenie danego słowa czy zdania. Może mieć różną formę wizualną, można go nadpisać w CSS. </p>
+
+				<h3><span class="bigletter">J</span>aka jest różnica między znacznikami code oraz samp? Czy zawsze dają identyczne wyniki?</h3>
+				<p> &lt;code&gt; stosuje się do kodów programów komputerowych, a &lt;samp&gt; do outputów programu. Nie muszą dawać identycznych wyników.</p>
+
+				<h3><span class="bigletter">J</span>aka jest różnica pomiędzy fragmentem strony sformatowanej tak: &lt;p&gt;…&lt;/p&gt;&lt;p&gt;…&lt;/p&gt; oraz fragmentem o następującej postaci: &lt;p&gt;…&lt;br/&gt;&lt;br/&gt;…&lt;/p&gt; ?</h3>
+				<p>Wizualnie te formatowania niczym się od siebie nie różnią, jednak po użyciu pierwszej możliwości mamy do czynienia z dwoma paragrafami, po użyciu drugiej - z jednym, przedzielonym pustą linią.</p>
+			</div>
+
+			<div class="spis_menu">
+				<div class="option2"><a href="#formatowanie">Formatowanie tekstu</a></div>
+				<div class="option2"><a href="#kod">Fragment kodu</a></div>
+				<div class="option2"><a href="#pytania">Pytania</a></div>
+			</div>
+		</div>
+
+		<p>
+		    <a href="http://validator.w3.org/check?uri=referer"><img
+		      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+		 </p>
+ 	</div>
+</body>
+</html>
+
+	

@@ -1,0 +1,34 @@
+#tabela_t {
+   background-color: lightgrey;
+   border-collapse: collapse;
+   table-layout: auto;
+   vertical-align: top;
+   border: 1px solid black;
+}
+
+#tabela_t td {
+   padding: 5px;
+   border: 1px solid black;
+   table-layout: auto;
+}
+td.inny_wyglad {
+   background-color: grey;
+}
+td.inny_wyglad1 {
+   background-color: #128870;
+}
+#tabela_t th {
+   padding: 5px;
+   border: 1px solid black;
+	font-weight: bold;
+   text-transform: uppercase;
+}
+th.inny_wyglad {
+   background-color: grey;
+}
+th.inny_wyglad1 {
+   background-color: #128870;
+}
+th.inny_wyglad2 {
+   background-color: #128870;
+}
